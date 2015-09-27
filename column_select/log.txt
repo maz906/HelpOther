@@ -1,0 +1,17 @@
+7/19/2014:
+- compiled into executable using cx_freeze 4.4
+- required changing raw_input() to input()
+- "mess up" safety checks are not perfect
+- must ensure that the results file is not in the directory
+
+Currently:
+- reads all csv files in the given directory
+- asks for what file name to save data to
+- gets the second column of each csv file (hard-coded)
+- probably inefficient
+- functional
+
+Changes (to do):
+- give the option to pick a column
+- give the option to pick a column for each file
+- run through python profiler

@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+#### SCRIPT THAT LOGS INTO UCONNECT ####
+import requests
+import json
+wana_url = "https://nacserver02.net.utah.edu/auth/perfigo_cm_validate.jsp"
+payload = {
+            "cm" : "ws32vklm",
+            "compact" : "true",
+            "password" : "[password]",
+            "provider" : "Campus Radius",
+            "reqFrom" : "perfigo_frame_login.jsp",
+            "username" : "[username]"
+          }
+requests.post(wana_url, data=payload)

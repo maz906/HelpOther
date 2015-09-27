@@ -1,0 +1,9 @@
+#!/bin/bash
+
+datafile=`basename "$3"`
+pathto=`dirname "$3"`
+token=''
+post_response=$(curl "https://canvas.instructure.com//api/v1/courses/$1/assignments/$2/submissions/self/files" \
+	-F "name=$datafile" \
+	-H "Authorization: Bearer $token")
+echo $post_response
