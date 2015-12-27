@@ -1,0 +1,4 @@
+#!/bin/bash
+/home/nazenji/.scripts/lowbattery & exit
+
+

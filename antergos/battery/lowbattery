@@ -1,0 +1,3 @@
+#!/bin/bash
+
+twmnc -d 5000 -c "Low battery. Charge your laptop." --pos bottom_right
